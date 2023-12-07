@@ -1,0 +1,26 @@
+ku_histo.c:135:35: error: The address of local variable 'bfType' is accessed at non-zero index. [objectIndex]
+    if (bfType[0] != 'B' || bfType[1] != 'M') {
+                                  ^
+ku_histo.c:134:28: note: Address of variable taken here.
+    char *bfType = (char *)&file.bfType;
+                           ^
+ku_histo.c:135:35: note: The address of local variable 'bfType' is accessed at non-zero index.
+    if (bfType[0] != 'B' || bfType[1] != 'M') {
+                                  ^
+ku_histo.c:168:9: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        sprintf(buff, "%d %d\n", i * interval, array[i]);
+        ^
+ku_histo.c:30:9: style: The scope of the variable 'threads' can be reduced. [variableScope]
+    int threads, interval, input_fd, output_fd;
+        ^
+ku_histo.c:30:18: style: The scope of the variable 'interval' can be reduced. [variableScope]
+    int threads, interval, input_fd, output_fd;
+                 ^
+ku_histo.c:30:28: style: The scope of the variable 'input_fd' can be reduced. [variableScope]
+    int threads, interval, input_fd, output_fd;
+                           ^
+ku_histo.c:30:38: style: The scope of the variable 'output_fd' can be reduced. [variableScope]
+    int threads, interval, input_fd, output_fd;
+                                     ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
